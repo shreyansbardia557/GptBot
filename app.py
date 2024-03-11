@@ -3,14 +3,11 @@ import os
 import openai
 
 # Set up OpenAI API credentials
-os.environ['OPENAI_API_KEY'] = "a4e7007a05654dcc97722d1671249ece"
-os.environ['OPENAI_API_BASE'] = "https://htioaiservice.openai.azure.com/"
-os.environ['OPENAI_API_VERSION'] = "2023-5-15"
 
 openai.api_type = "azure"
 openai.api_base = "https://htioaiservice.openai.azure.com/"
 openai.api_version = "2022-12-01"
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv(api_key")
 
 
 app = Flask(__name__)
